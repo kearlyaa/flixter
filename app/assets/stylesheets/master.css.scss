@@ -1,3 +1,12 @@
+$footer-height: 100px;
+$wrap-bottom: 150px;
+
+html, body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background: url('subtle_freckles.png');
   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
@@ -64,4 +73,34 @@ h1, h2, h3, h4, h5, h6, .navbar {
 
 .booyah-box h2, .booyah-box h1 {
   margin:10px;
+}
+
+#wrap{
+  min-height: 100%;
+  height: auto;
+  margin-bottom: -$wrap-bottom;
+  padding: 0 0 $footer-height;
+}
+
+#footer{
+  height: $footer-height;
+  background-color: rgba(32,32,33,0.9);
+  font-family: "Helvetica Neue",Helvetica;
+  padding: 0;
+  margin-top: 30px;
+}
+
+#footer a {
+  color: #ffffff;
+  font-weight: 100;
+  clear: both;
+}
+
+.push{
+  height: $footer-height;
+  clear: both;
+}
+
+.clr {
+  clear:both;
 }
