@@ -9,4 +9,12 @@ class Course < ActiveRecord::Base
 
   mount_uploader :image, ImageUploader
 
+  def free?
+    cost.zero?
+  end
+
+  def premium?
+    ! free?
+  end
+
 end
