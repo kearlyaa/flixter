@@ -101,14 +101,38 @@ h1, h2, h3, h4, h5, h6, .navbar {
   clear: both;
 }
 
-.clr {
+.clr{
   clear:both;
 }
 
-.help-block, .field_with_errors {
+.help-block, .field_with_errors{
   color: #ff3333;
   background-color: #ffeeee;
   border-radius: 3px;
   padding: 8px;
   margin: 10px;
+}
+
+.lesson{
+  background-color: #000000;
+  margin-top: 10px;
+  height: 130px
+}
+
+.section{
+  border: 1px solid;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  padding: 20px;
+}
+
+.lesson a{
+  color: #ffffff;
+  font-family: "Helvetica Neue",Helvetica;
+  font-weight: 100;
+  font-size: 15px
+}
+
+.lesson a b{
+  font-weight: 100;
+  font-size: 25px;
 }
