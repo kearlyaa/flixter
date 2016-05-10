@@ -6,11 +6,6 @@ class Instructor::CoursesController < ApplicationController
     @course = Course.new
   end
 
-  def index
-    # todo - restrict this to courses owned by the logged in instructor
-    @course = Course.all
-  end
-
   def create
     @course = current_user.courses.create(course_params)
     if @course.valid?
@@ -27,7 +22,7 @@ class Instructor::CoursesController < ApplicationController
 
   def destroy
     current_course.destroy
-    redirect_to instructor_courses_path
+    redirect_to courses_path
   end
 
   private
