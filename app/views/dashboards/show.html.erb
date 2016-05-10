@@ -7,9 +7,13 @@
       <%= link_to course.title, course_path(course) %>
     </h3>
     <br />
-    <%= image_tag course.image, class: 'img-responsive' %>
+    <% if course.image? %>
+      <%= image_tag course.image, class: 'img-responsive course_image' %>
+    <% else %>
+       <%= image_tag "missing_lesson_image.jpg", class: 'img-responsive course_image' %>
+    <% end %> 
     <br />
-    <div class="col-xs-12 col-sm-8">
+    <div class="col-xs-11 col-sm-7 col-xs-offset-1 col-sm-offset-1">
       <%= course.description %>
     </div>
     <div class="col-xs-12 col-sm-4 text-center">
@@ -25,9 +29,13 @@
       <%= link_to course.title, course_path(course) %>
     </h3>
     <br />
-    <%= image_tag course.image, class: 'img-responsive' %>
+    <% if course.image? %>
+      <%= image_tag course.image, class: 'img-responsive course_image' %>
+    <% else %>
+       <%= image_tag "missing_lesson_image.jpg", class: 'img-responsive course_image' %>
+    <% end %> 
     <br />
-    <div class="col-xs-12 col-sm-8">
+    <div class="col-xs-11 col-sm-7 col-xs-offset-1 col-sm-offset-1 ">
       <%= course.description %>
     </div>
     <div class="col-xs-12 col-sm-4 text-center">

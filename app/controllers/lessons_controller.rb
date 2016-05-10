@@ -1,8 +1,10 @@
 class LessonsController < ApplicationController
   before_action :authenticate_user!
   before_action :user_enrolled_in_course
+  attr_reader :random_image_filename
 
   def show
+    @random_image_filename = ["puppies.png", "kittens.png", "hippo.png"].sample
   end
 
   private

@@ -13,6 +13,8 @@
     <% end %>
   <% end %>
 
+  <%= link_to 'View all lessons', course_path(current_lesson.section.course), class: 'view_lessons_button btn btn-default pull-right' %>
+
   <br class="clr" />
   <br />
   
@@ -28,6 +30,8 @@
       </p>
     </noscript>
   </video>
+<% else %>
+  <%= image_tag "/assets/#{@random_image_filename}", class: 'img-responsive default_video_image' %>
 <% end %>
 
 </div>

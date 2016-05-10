@@ -69,10 +69,24 @@ h1, h2, h3, h4, h5, h6, .navbar {
   border: 1px solid #ccc;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
   padding:10px;
+  position: relative;
 }
 
 .booyah-box h2, .booyah-box h1 {
   margin:10px;
+}
+
+.administer{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.label{
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  padding: 6px;
 }
 
 #wrap{
@@ -80,6 +94,20 @@ h1, h2, h3, h4, h5, h6, .navbar {
   height: auto;
   margin-bottom: -$wrap-bottom;
   padding: 0 0 $footer-height;
+}
+
+.course_image{
+  margin: 10px auto;
+}
+
+.course_container{
+  margin-bottom: 20px;
+  padding: 20px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.course_container:last-child{
+  border-bottom: none;
 }
 
 /* Footer */
@@ -117,6 +145,10 @@ h1, h2, h3, h4, h5, h6, .navbar {
 
 .clr{
   clear:both;
+}
+
+.view_lessons_button{
+  margin-right: 8px;
 }
 
 .help-block, .field_with_errors{
