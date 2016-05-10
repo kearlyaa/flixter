@@ -4,7 +4,7 @@ class LessonsController < ApplicationController
   attr_reader :random_image_filename
 
   def show
-    @random_image_filename = ["puppies.png", "kittens.png", "hippo.png"].sample
+    @random_image_filename = ["puppies.jpg", "kittens.jpg", "hippo.jpg"].sample
   end
 
   private
