@@ -10,7 +10,7 @@
         <% if course.image? %>
           <%= image_tag course.image, class: 'img-responsive course_image' %>
         <% else %>
-           <%= image_tag "missing_lesson_image.jpg", class: 'img-responsive course_image' %>
+           <%= image_tag "missing_course_image.jpg", class: 'img-responsive course_image' %>
         <% end %>  
       <div class="col-sm-7 col-xs-11 col-xs-offset-1">
         <%= course.description %>
